@@ -1,0 +1,32 @@
+<div>
+  <h1>Schedule</h1>
+  <div class="d-flex justify-content-center">
+    <div class="spinner-border" role="status">
+      <span class="sr-only" id="loading">Loading...</span>
+    </div>
+  </div>
+  <table class="table" id='tab'>
+    <thead>
+      <tr>
+        <th scope="col">DateTime</th>
+        <th scope="col">Day</th>
+        <th scope="col">EventId</th>
+        <th scope="col">LeagueId</th>
+        <th scope="col">Name</th>
+        <th scope="col">Season</th>
+        <th scope="col">ShortName</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let e of list;">
+        <td>{{ e.DateTime }}</td>
+        <td>{{ e.Day }}</td>
+        <td>{{ e.EventId }}</td>
+        <td>{{ e.LeagueId }}</td>
+        <td>{{ e.Name }}</td>
+        <td>{{ e.Season }}</td>
+        <td>{{ e.ShortName }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
